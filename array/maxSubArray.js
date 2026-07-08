@@ -14,20 +14,25 @@
 function maxSubArray(nums) {
   let cur = nums[0]
   let res = nums[0]
-  for (let i = 1; i < nums.length; i++) {
-    cur = Math.max(nums[i], nums[i] + cur)
+  for (let i = 0; i < nums.length; i++) {
+    cur = Math.max(nums[i], cur + nums[i])
     res = Math.max(res, cur)
   }
   return res
 }
 
+const testCases = [
+  { input: [-2, 1, -3, 4, -1, 2, 1, -5, 4], expected: 6, desc: '经典用例，子数组 [4,-1,2,1]' },
+  { input: [1], expected: 1, desc: '单元素' },
+  { input: [5, 4, -1, 7, 8], expected: 23, desc: '全正数，取整个数组' },
+  { input: [-1], expected: -1, desc: '单个负数' },
+  { input: [-2, -1], expected: -1, desc: '全负数，取最大值' },
+  { input: [-2, 1], expected: 1, desc: '负数后跟正数' },
+  { input: [8, -19, 5, -4, 20], expected: 21, desc: '中间断开，取 [5,-4,20]' },
+]
 
-function maxSubArray(nums) {
-  let curr = nums[0]
-  let res = nums[0]
-  for (let i = 1; i < nums.length; i++) {
-    curr = Math.max(nums[i], nums[i] + curr)
-    res = Math.max(res, curr)
-  }
-  return res
-}
+testCases.forEach(({ input, expected, desc }, i) => {
+  const result = maxSubArray(input)
+  const pass = result === expected
+  console.log(`case ${i + 1} [${desc}]:`, pass ? 'PASS' : `FAIL (got ${result}, expected ${expected})`)
+})
