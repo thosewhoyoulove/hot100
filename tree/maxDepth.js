@@ -5,5 +5,17 @@
  */
 
 function maxDepth(root) {
-  // TODO: 递归 / BFS
+  if (!root) return 0;
+
+  let depth = 0;
+  const stack = [[root, 1]];
+
+  while (stack.length) {
+    const [node, currentDepth] = stack.pop();
+    if (currentDepth > depth) depth = currentDepth;
+    if (node.left) stack.push([node.left, currentDepth + 1]);
+    if (node.right) stack.push([node.right, currentDepth + 1]);
+  }
+
+  return depth;
 }
