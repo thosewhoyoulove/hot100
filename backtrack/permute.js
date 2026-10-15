@@ -1,8 +1,27 @@
 /*
  * :file description: LeetCode 46 - 全排列
  * :leetcode: https://leetcode.cn/problems/permutations/
+ *
+ * 难度：中等
+ *
+ * 描述：
+ * nums 不含重复数字，返回它的全部排列。顺序不限。
+ *
+ * 示例 1：
+ * 输入：nums = [1,2,3]
+ * 输出：[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
+ *
+ * 示例 2：
+ * 输入：nums = [0,1]
+ * 输出：[[0,1],[1,0]]
+ *
+ * 示例 3：
+ * 输入：nums = [1]
+ * 输出：[[1]]
+ *
+ * 约束：
+ * 1 <= nums.length <= 6，nums 中整数互不相同。
  */
-// 给定一个不含重复数字的数组 nums ，返回其所有可能的全排列。你可以按任意顺序返回答案。
 const permute = nums => {
   const n = nums.length
   const res = []

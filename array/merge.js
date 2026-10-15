@@ -2,6 +2,23 @@
  * :file description: LeetCode 56 - 合并区间
  * :name: \hot100\array\merge.js
  * :leetcode: https://leetcode.cn/problems/merge-intervals/
+ *
+ * 难度：中等
+ *
+ * 描述：
+ * intervals[i] = [start, end] 表示一个闭区间。合并所有重叠区间，返回能覆盖全部输入的不重叠区间。
+ *
+ * 示例 1：
+ * 输入：intervals = [[1,3],[2,6],[8,10],[15,18]]
+ * 输出：[[1,6],[8,10],[15,18]]
+ *
+ * 示例 2：
+ * 输入：intervals = [[1,4],[4,5]]
+ * 输出：[[1,5]]
+ * 解释：端点相接也算重叠
+ *
+ * 约束：
+ * 1 <= intervals.length <= 10^4，0 <= start <= end <= 10^4。
  */
 function merge(intervals) {
   // 0. 边界情况：没有区间直接返回空数组

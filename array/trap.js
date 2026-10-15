@@ -8,6 +8,22 @@
  * :last editor: omencao
  * :date last edited: 2026-07-01 20:33:27
  * :Author: desktop-uknn8b7
+ *
+ * 难度：困难
+ *
+ * 描述：
+ * height[i] 表示宽度为 1 的柱子高度。按这个高度图下雨后，能接住多少单位雨水。
+ *
+ * 示例 1：
+ * 输入：height = [0,1,0,2,1,0,1,3,2,1,2,1]
+ * 输出：6
+ *
+ * 示例 2：
+ * 输入：height = [4,2,0,3,2,5]
+ * 输出：9
+ *
+ * 约束：
+ * 1 <= height.length <= 2 * 10^4，0 <= height[i] <= 10^5。
  */
 function trap(height) {
   let left = 0

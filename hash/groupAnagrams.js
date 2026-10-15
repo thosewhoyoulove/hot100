@@ -2,6 +2,27 @@
  * :file description: LeetCode 49 - 字母异位词分组
  * :name: \hot100\hash\groupAnagrams.js
  * :leetcode: https://leetcode.cn/problems/group-anagrams/
+ *
+ * 难度：中等
+ *
+ * 描述：
+ * 把字符串数组里的字母异位词分到同一组。异位词是字母重排后得到的词。
+ * 组内和组间顺序都不限。
+ *
+ * 示例 1：
+ * 输入：strs = ["eat","tea","tan","ate","nat","bat"]
+ * 输出：[["bat"],["nat","tan"],["ate","eat","tea"]]
+ *
+ * 示例 2：
+ * 输入：strs = [""]
+ * 输出：[[""]]
+ *
+ * 示例 3：
+ * 输入：strs = ["a"]
+ * 输出：[["a"]]
+ *
+ * 约束：
+ * 1 <= strs.length <= 10^4，0 <= strs[i].length <= 100，只含小写字母。
  */
 const groupAnagrams = (strs) => {
   const map = {}

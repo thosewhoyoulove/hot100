@@ -2,6 +2,22 @@
  * :file description: LeetCode 283 - 移动零
  * :name: \hot100\array\moveZeroes.js
  * :leetcode: https://leetcode.cn/problems/move-zeroes/
+ *
+ * 难度：简单
+ *
+ * 描述：
+ * 把数组里所有 0 移到末尾，非 0 元素的相对顺序不变。必须原地修改，不能另开数组拷贝。
+ *
+ * 示例 1：
+ * 输入：nums = [0,1,0,3,12]
+ * 输出：[1,3,12,0,0]
+ *
+ * 示例 2：
+ * 输入：nums = [0]
+ * 输出：[0]
+ *
+ * 约束：
+ * 1 <= nums.length <= 10^4。
  */
 const moveZeroes = nums => {
   let slow = 0

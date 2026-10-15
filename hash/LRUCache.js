@@ -1,9 +1,38 @@
 /*
  * :file description: LeetCode 146 - LRU 缓存
  * :leetcode: https://leetcode.cn/problems/lru-cache/
+ *
+ * 难度：中等
+ *
+ * 描述：
+ * 实现 LRU（最近最少使用）缓存，容量为 capacity。
+ * get(key)：存在则返回对应值，否则返回 -1。访问后该键变为最近使用。
+ * put(key, value)：更新或插入。超过容量时淘汰最久未使用的键。
+ * get 和 put 平均都要 O(1)。
+ *
+ * 示例：
+ * 输入：
+ * ["LRUCache","put","put","get","put","get","put","get","get","get"]
+ * [[2],[1,1],[2,2],[1],[3,3],[2],[4,4],[1],[3],[4]]
+ * 输出：
+ * [null,null,null,1,null,-1,null,-1,3,4]
+ *
+ * 解释：
+ * LRUCache(2)
+ * put(1, 1)        // 缓存 {1=1}
+ * put(2, 2)        // 缓存 {1=1, 2=2}
+ * get(1)           // 返回 1
+ * put(3, 3)        // 淘汰 2，缓存 {1=1, 3=3}
+ * get(2)           // 返回 -1
+ * put(4, 4)        // 淘汰 1，缓存 {4=4, 3=3}
+ * get(1)           // 返回 -1
+ * get(3)           // 返回 3
+ * get(4)           // 返回 4
+ *
+ * 约束：
+ * 1 <= capacity <= 3000，0 <= key <= 10^4，0 <= value <= 10^5。
+ * get 与 put 最多调用 2 * 10^5 次。
  */
-// 运用所掌握的数据结构，设计和实现一个 LRU (最近最少使用) 缓存。
-// get 和 put 都必须 O(1) 时间复杂度。
 
 /** 双向链表节点 */
 class Node {

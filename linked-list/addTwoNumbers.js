@@ -7,7 +7,34 @@
  * :date created: 2026-06-29 14:19:03
  * :last editor: omencao
  * :date last edited: 2026-06-29 14:20:33
+ *
+ * 难度：中等
+ *
+ * 描述：
+ * 两个非空链表分别表示两个非负整数，数字逆序存放，每个节点一位。
+ * 把两个数相加，用同样的逆序链表返回和。除了数字 0，不会有前导零。
+ *
+ * 示例 1：
+ * 输入：l1 = [2,4,3], l2 = [5,6,4]
+ * 输出：[7,0,8]
+ * 解释：342 + 465 = 807
+ *
+ * 示例 2：
+ * 输入：l1 = [0], l2 = [0]
+ * 输出：[0]
+ *
+ * 示例 3：
+ * 输入：l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
+ * 输出：[8,9,9,9,0,0,0,1]
+ *
+ * 约束：
+ * 每个链表节点数 [1, 100]，节点值 0 到 9。
  */
+
+function ListNode(val, next) {
+  this.val = (val === undefined ? 0 : val)
+  this.next = (next === undefined ? null : next)
+}
 const addTwoNumbers = (l1, l2) => {
   let dummy = new ListNode(0)
   let cur = dummy

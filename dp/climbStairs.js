@@ -2,6 +2,24 @@
  * :file description: LeetCode 70 - 爬楼梯
  * :name: \hot100\dp\climbStairs.js
  * :leetcode: https://leetcode.cn/problems/climbing-stairs/
+ *
+ * 难度：简单
+ *
+ * 描述：
+ * 爬 n 阶楼梯，每次只能爬 1 或 2 阶。返回有多少种不同爬法。
+ *
+ * 示例 1：
+ * 输入：n = 2
+ * 输出：2
+ * 解释：1+1，或一次爬 2 阶
+ *
+ * 示例 2：
+ * 输入：n = 3
+ * 输出：3
+ * 解释：1+1+1，1+2，2+1
+ *
+ * 约束：
+ * 1 <= n <= 45。
  */
 const climbStairs = n => {
   if (n <= 2) return n

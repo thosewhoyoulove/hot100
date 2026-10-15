@@ -1,21 +1,68 @@
 /*
  * :file description: LeetCode 206 - 反转链表
- * :leetcode: https://leetcode.cn/problems/fan-zhuan-lian-biao/
+ * :leetcode: https://leetcode.cn/problems/reverse-linked-list/
+ *
+ * 难度：简单
+ *
+ * 描述：
+ * 给定单链表头节点 head，反转整条链表并返回新的头节点。
+ *
+ * 示例 1：
+ * 输入：head = [1,2,3,4,5]
+ * 输出：[5,4,3,2,1]
+ *
+ * 示例 2：
+ * 输入：head = [1,2]
+ * 输出：[2,1]
+ *
+ * 示例 3：
+ * 输入：head = []
+ * 输出：[]
+ *
+ * 约束：
+ * 节点数 [0, 5000]，节点值 [-5000, 5000]。迭代和递归都应能做。
  */
-// 给你单链表的头节点 head，反转链表并返回反转后的头节点。
 
 /** 迭代：prev / cur / next 三指针 */
 function reverseList(head) {
   let prev = null
   let cur = head
   while (cur) {
-    const next = cur.next
+    const nextTemp = cur.next
     cur.next = prev
     prev = cur
-    cur = next
+    cur = nextTemp
   }
   return prev
 }
+const node1 = {
+  val: 1,
+  next: null
+}
+
+const node2 = {
+  val: 2,
+  next: null
+}
+
+const node3 = {
+  val: 3,
+  next: null
+}
+
+const node4 = {
+  val: 4,
+  next: null
+}
+
+node1.next = node2
+node2.next = node3
+node3.next = node4
+
+
+reverseList(node1)
+
+return
 
 /** 递归 */
 function reverseListRecursive(head) {

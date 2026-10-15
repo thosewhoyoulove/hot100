@@ -2,12 +2,25 @@
  * :file description: LeetCode 238 - 除自身以外数组的乘积
  * :leetcode: https://leetcode.cn/problems/product-of-array-except-self/
  * :status: todo
+ *
+ * 难度：中等
+ *
+ * 描述：
+ * 返回数组 answer，answer[i] 等于 nums 中除 nums[i] 以外所有元素的乘积。
+ * 不能用除法，要在 O(n) 时间内完成。任意元素的前缀积、后缀积都在 32 位整数范围内。
+ *
+ * 示例 1：
+ * 输入：nums = [1,2,3,4]
+ * 输出：[24,12,8,6]
+ *
+ * 示例 2：
+ * 输入：nums = [-1,1,0,-3,3]
+ * 输出：[0,0,9,0,0]
+ *
+ * 约束：
+ * 2 <= nums.length <= 10^5，-30 <= nums[i] <= 30。
+ * 输出数组不算额外空间，可以做到 O(1) 额外空间。
  */
-// 给你一个整数数组 nums，返回 数组 answer ，其中 answer[i] 等于 nums 中除了 nums[i] 之外其余各元素的乘积 。
-
-// 题目数据 保证 数组 nums之中任意元素的全部前缀元素和后缀的乘积都在  32 位 整数范围内。
-
-// 请 不要使用除法，且在 O(n) 时间复杂度内完成此题。
 function productExceptSelf(nums) {
   const n = nums.length
   const answer = []
