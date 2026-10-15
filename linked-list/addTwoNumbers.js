@@ -35,6 +35,18 @@ function ListNode(val, next) {
   this.val = (val === undefined ? 0 : val)
   this.next = (next === undefined ? null : next)
 }
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} l1
+ * @param {ListNode} l2
+ * @return {ListNode}
+ */
 const addTwoNumbers = (l1, l2) => {
   let dummy = new ListNode(0)
   let cur = dummy
@@ -67,6 +79,18 @@ const nestedList = institution[NESTED_KEY[searchType] || 'certNested'];
 const nestedTotal = institution[NESTED_TOTAL_KEY[searchType] || 'certNestedTotal'];
 const hasCertNested = Array.isArray(nestedList);
 
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} l1
+ * @param {ListNode} l2
+ * @return {ListNode}
+ */
 const addTwoNumbers1 = (l1, l2) => {
   const dummy = new ListNode(0)
   let cur = dummy

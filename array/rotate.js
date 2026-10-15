@@ -25,6 +25,11 @@
  * 约束：
  * 1 <= nums.length <= 10^5，0 <= k <= 10^5。
  */
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {void} Do not return anything, modify nums in-place instead.
+ */
 function rotate(nums, k) {
   const n = nums.length
   if (n === 0) return

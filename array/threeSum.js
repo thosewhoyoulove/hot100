@@ -24,6 +24,10 @@
  * 约束：
  * 3 <= nums.length <= 3000，-10^5 <= nums[i] <= 10^5。
  */
+/**
+ * @param {number[]} nums
+ * @return {number[][]}
+ */
 function threeSum(nums) {
   // TODO: 排序 + 双指针
 }

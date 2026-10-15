@@ -23,6 +23,10 @@
  * 1 <= nums.length <= 100，0 <= nums[i] <= 400。
  */
 
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
 function rob(nums) {
   // TODO: dp[i] = max(dp[i-1], dp[i-2] + nums[i])
   const dp = new Array(nums.length)

@@ -24,6 +24,17 @@
  * 链表条数 k 满足 0 <= k <= 10^4，所有节点总数不超过 10^4。
  */
 
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode[]} lists
+ * @return {ListNode}
+ */
 function mergeKLists(lists) {
   // TODO: 分治两两合并，或小根堆每次取最小头
 }

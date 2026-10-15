@@ -21,6 +21,17 @@
  * 进阶要求 O(n) 时间、O(1) 额外空间。
  */
 
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @return {boolean}
+ */
 function isPalindrome(head) {
   // TODO: 找中点 + 反转后半段 + 比较
 }

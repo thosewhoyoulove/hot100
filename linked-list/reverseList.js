@@ -24,6 +24,17 @@
  */
 
 /** 迭代：prev / cur / next 三指针 */
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
 function reverseList(head) {
   let prev = null
   let cur = head
@@ -65,6 +76,17 @@ reverseList(node1)
 return
 
 /** 递归 */
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
 function reverseListRecursive(head) {
   if (!head || !head.next) return head
   const newHead = reverseListRecursive(head.next)

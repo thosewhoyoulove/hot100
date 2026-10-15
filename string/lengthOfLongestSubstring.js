@@ -25,6 +25,10 @@
  * 约束：
  * 0 <= s.length <= 5 * 10^4，s 由英文字母、数字、符号和空格组成。
  */
+/**
+ * @param {string} s
+ * @return {number}
+ */
 const lengthOfLongestSubstring = (s) => {
   const map = new Map()
   let left = 0
@@ -41,6 +45,10 @@ const lengthOfLongestSubstring = (s) => {
 }
 
 
+/**
+ * @param {string} s
+ * @return {number}
+ */
 const lengthOfLongestSubstring1 = s => {
   const map = new Map()
   let left = 0

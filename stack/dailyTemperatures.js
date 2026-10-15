@@ -25,6 +25,10 @@
  * 1 <= temperatures.length <= 10^5，30 <= temperatures[i] <= 100。
  */
 
+/**
+ * @param {number[]} temperatures
+ * @return {number[]}
+ */
 function dailyTemperatures(temperatures) {
   // TODO: 单调递减栈
 }

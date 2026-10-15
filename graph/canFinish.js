@@ -24,6 +24,11 @@
  * 1 <= numCourses <= 2000，先修关系条数 <= 5000，每对关系互不相同。
  */
 
+/**
+ * @param {number} numCourses
+ * @param {number[][]} prerequisites
+ * @return {boolean}
+ */
 function canFinish(numCourses, prerequisites) {
   // TODO: 拓扑排序 / DFS 判环
 }

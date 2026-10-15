@@ -25,6 +25,17 @@
  * 节点数 [0, 100]，节点值 [0, 100]。
  */
 
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
 function swapPairs(head) {
   // TODO: 虚拟头 + 三个指针交换
 }

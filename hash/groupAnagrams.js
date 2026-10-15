@@ -24,6 +24,10 @@
  * 约束：
  * 1 <= strs.length <= 10^4，0 <= strs[i].length <= 100，只含小写字母。
  */
+/**
+ * @param {string[]} strs
+ * @return {string[][]}
+ */
 const groupAnagrams = (strs) => {
   const map = {}
 
@@ -53,6 +57,10 @@ const nestedList = institution[NESTED_KEY[searchType] || 'certNested'];
 const nestedTotal = institution[NESTED_TOTAL_KEY[searchType] || 'certNestedTotal'];
 const hasCertNested = Array.isArray(nestedList);
 
+/**
+ * @param {string[]} strs
+ * @return {string[][]}
+ */
 const groupAnagrams1 = (strs) => {
   const map = {}
   for (const str of strs) {

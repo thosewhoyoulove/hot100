@@ -25,6 +25,17 @@
  * 进阶要求 O(n log n) 时间、常数级额外空间。
  */
 
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
 function sortList(head) {
   // TODO: 归并排序：快慢指针拆半 + 合并有序链表
 }

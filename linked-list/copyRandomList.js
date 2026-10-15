@@ -26,6 +26,18 @@
  * 0 <= n <= 1000，-10^4 <= Node.val <= 10^4。
  */
 
+/**
+ * Definition for a Node.
+ * function Node(val, next, random) {
+ *     this.val = val
+ *     this.next = next
+ *     this.random = random
+ * }
+ */
+/**
+ * @param {Node} head
+ * @return {Node}
+ */
 function copyRandomList(head) {
   // TODO: 哈希表映射旧节点 → 新节点，或原地插拷贝节点
 }

@@ -21,6 +21,18 @@
  * 节点数 n 满足 1 <= k <= n <= 5000。可以只用 O(1) 额外空间。
  */
 
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @param {number} k
+ * @return {ListNode}
+ */
 function reverseKGroup(head, k) {
   // TODO: 分组定位 + 原地翻转 + 接回
 }

@@ -28,6 +28,10 @@
 // O(n log n) 的 tails + 二分与 React 列表 diff 中「最少移动节点」的思路同源。
 
 /** 写法 1：DP O(n²)，dp[i] = 以 nums[i] 结尾的 LIS 长度 */
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
 function lengthOfLISDP(nums) {
   if (nums.length === 0) return 0
   const dp = new Array(nums.length).fill(1)
@@ -56,6 +60,10 @@ const lowerBound = (arr, target) => {
 }
 
 /** 写法 2：贪心 + 二分 O(n log n)，tails[i] = 长度为 i+1 的 LIS 的最小末尾 */
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
 function lengthOfLIS(nums) {
   const tails = []
   for (const num of nums) {

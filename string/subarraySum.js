@@ -20,6 +20,11 @@
  * 1 <= nums.length <= 2 * 10^4，-1000 <= nums[i] <= 1000，-10^7 <= k <= 10^7。
  */
 
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
 function subarraySum(nums, k) {
   // TODO: 前缀和 + 哈希表
 }

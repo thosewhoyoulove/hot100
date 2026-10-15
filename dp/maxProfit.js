@@ -22,6 +22,10 @@
  * 1 <= prices.length <= 10^5，0 <= prices[i] <= 10^4。
  */
 
+/**
+ * @param {number[]} prices
+ * @return {number}
+ */
 function maxProfit(prices) {
   // TODO: 一次遍历，维护历史最低价
   let minPrice = Infinity

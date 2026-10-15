@@ -21,6 +21,10 @@
  * 2 <= nums.length <= 10^5，-30 <= nums[i] <= 30。
  * 输出数组不算额外空间，可以做到 O(1) 额外空间。
  */
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
 function productExceptSelf(nums) {
   const n = nums.length
   const answer = []

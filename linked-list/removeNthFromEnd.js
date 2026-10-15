@@ -24,6 +24,18 @@
  * 链表长度 sz 满足 1 <= sz <= 30，且 1 <= n <= sz。可以一趟扫描完成。
  */
 
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @param {number} n
+ * @return {ListNode}
+ */
 function removeNthFromEnd(head, n) {
   // TODO: 快慢指针，快指针先走 n 步
 }

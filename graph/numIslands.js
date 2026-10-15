@@ -31,6 +31,10 @@
  * 1 <= 行数、列数 <= 300。
  */
 
+/**
+ * @param {character[][]} grid
+ * @return {number}
+ */
 function numIslands(grid) {
   // TODO: DFS / BFS 淹没岛屿
 }

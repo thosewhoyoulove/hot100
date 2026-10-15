@@ -45,6 +45,9 @@ class Node {
 }
 
 /** 写法 1：哈希表 + 双向链表（标准解法） */
+/**
+ * @param {number} capacity
+ */
 class LRUCache {
   constructor(capacity) {
     this.capacity = capacity
@@ -84,6 +87,10 @@ class LRUCache {
     return node
   }
 
+  /**
+   * @param {number} key
+   * @return {number}
+   */
   get(key) {
     if (!this.map.has(key)) return -1
     const node = this.map.get(key)
@@ -91,6 +98,11 @@ class LRUCache {
     return node.value
   }
 
+  /**
+   * @param {number} key
+   * @param {number} value
+   * @return {void}
+   */
   put(key, value) {
     if (this.map.has(key)) {
       const node = this.map.get(key)
@@ -111,12 +123,19 @@ class LRUCache {
 }
 
 /** 写法 2：Map 保序（JS 特有捷径） */
+/**
+ * @param {number} capacity
+ */
 class LRUCacheByMap {
   constructor(capacity) {
     this.capacity = capacity
     this.map = new Map()
   }
 
+  /**
+   * @param {number} key
+   * @return {number}
+   */
   get(key) {
     if (!this.map.has(key)) return -1
     const val = this.map.get(key)
@@ -125,6 +144,11 @@ class LRUCacheByMap {
     return val
   }
 
+  /**
+   * @param {number} key
+   * @param {number} value
+   * @return {void}
+   */
   put(key, value) {
     if (this.map.has(key)) this.map.delete(key)
     this.map.set(key, value)

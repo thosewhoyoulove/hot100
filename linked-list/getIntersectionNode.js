@@ -26,6 +26,18 @@
  * 两条链表长度均不超过 3 * 10^4。要求 O(m + n) 时间、O(1) 额外空间。
  */
 
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} headA
+ * @param {ListNode} headB
+ * @return {ListNode}
+ */
 function getIntersectionNode(headA, headB) {
   // TODO: 双指针走两遍，路程对齐后相遇即为交点
 }

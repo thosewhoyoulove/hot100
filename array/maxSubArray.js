@@ -32,6 +32,10 @@
  */
 
 
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
 function maxSubArray(nums) {
   let cur = nums[0]
   let res = nums[0]

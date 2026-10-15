@@ -26,6 +26,17 @@
  * 节点数 [0, 10^4]。要求能用 O(1) 额外空间判断。
  */
 
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @return {boolean}
+ */
 function hasCycle(head) {
   // TODO: 快慢指针
   let slow = head

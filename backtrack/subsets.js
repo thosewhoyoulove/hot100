@@ -21,6 +21,10 @@
  * 1 <= nums.length <= 10，-10 <= nums[i] <= 10，元素互不相同。
  */
 
+/**
+ * @param {number[]} nums
+ * @return {number[][]}
+ */
 function subsets(nums) {
   // TODO: 回溯 / 迭代枚举
 }

@@ -25,6 +25,17 @@
  * 节点数 [0, 10^4]。要求能用 O(1) 额外空间。
  */
 
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
 function detectCycle(head) {
   // TODO: 快慢指针找相遇点，再找环入口
   let slow = head

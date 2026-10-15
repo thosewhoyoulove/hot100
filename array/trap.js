@@ -25,6 +25,10 @@
  * 约束：
  * 1 <= height.length <= 2 * 10^4，0 <= height[i] <= 10^5。
  */
+/**
+ * @param {number[]} height
+ * @return {number}
+ */
 function trap(height) {
   let left = 0
   let right = height.length - 1
@@ -60,6 +64,10 @@ function trap(height) {
 
 
 
+/**
+ * @param {number[]} height
+ * @return {number}
+ */
 function trap1(height) {
   let l = 0
   let r = height.length - 1
@@ -81,6 +89,10 @@ function trap1(height) {
 }
 
 
+/**
+ * @param {number[]} height
+ * @return {number}
+ */
 function trap2(height) {
   let left = 0
   let right = height.length - 1

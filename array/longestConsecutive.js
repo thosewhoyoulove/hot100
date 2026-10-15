@@ -21,6 +21,10 @@
  * 约束：
  * 0 <= nums.length <= 10^5，-10^9 <= nums[i] <= 10^9。
  */
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
 const longestConsecutive = nums => {
   const set = new Set(nums)
   let maxLen = 0

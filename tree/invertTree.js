@@ -25,6 +25,18 @@
  * 节点数 [0, 100]，节点值 [-100, 100]。
  */
 
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {TreeNode}
+ */
 function invertTree(root) {
   // TODO: 递归交换左右子树
 }

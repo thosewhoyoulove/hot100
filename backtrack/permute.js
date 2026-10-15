@@ -22,6 +22,10 @@
  * 约束：
  * 1 <= nums.length <= 6，nums 中整数互不相同。
  */
+/**
+ * @param {number[]} nums
+ * @return {number[][]}
+ */
 const permute = nums => {
   const n = nums.length
   const res = []

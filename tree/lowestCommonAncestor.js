@@ -27,6 +27,20 @@
  * 节点数 [2, 10^5]，-10^9 <= Node.val <= 10^9，p != q。
  */
 
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @param {TreeNode} p
+ * @param {TreeNode} q
+ * @return {TreeNode}
+ */
 function lowestCommonAncestor(root, p, q) {
   // TODO: 递归后序遍历
 }

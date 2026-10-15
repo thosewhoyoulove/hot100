@@ -29,6 +29,10 @@
  * 1 <= s.length <= 10^4，s 只由这六种括号组成。
  */
 
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
 function isValid(s) {
   // TODO: 栈匹配
 }

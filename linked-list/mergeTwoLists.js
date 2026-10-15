@@ -24,6 +24,18 @@
  * 每个链表节点数 [0, 50]，节点值 [-100, 100]，两条链表都已非递减。
  */
 
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} list1
+ * @param {ListNode} list2
+ * @return {ListNode}
+ */
 function mergeTwoLists(list1, list2) {
   // TODO: 虚拟头节点
   const dummy = new ListNode(0)

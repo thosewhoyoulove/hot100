@@ -21,6 +21,10 @@
  * 约束：
  * 1 <= n <= 45。
  */
+/**
+ * @param {number} n
+ * @return {number}
+ */
 const climbStairs = n => {
   if (n <= 2) return n
   const dp = new Array(n + 1).fill(0)
@@ -51,6 +55,10 @@ const hasCertNested = Array.isArray(nestedList);
 
 
 
+/**
+ * @param {number} n
+ * @return {number}
+ */
 const climbStairs1 = n => {
   if (n <= 2) return n
   const dp = new Array(n + 1).fill(0)

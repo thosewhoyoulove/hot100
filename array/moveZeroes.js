@@ -19,6 +19,10 @@
  * 约束：
  * 1 <= nums.length <= 10^4。
  */
+/**
+ * @param {number[]} nums
+ * @return {void} Do not return anything, modify nums in-place instead.
+ */
 const moveZeroes = nums => {
   let slow = 0
   for (let fast = 0; fast < nums.length; fast++) {
@@ -50,6 +54,10 @@ const nestedTotal = institution[NESTED_TOTAL_KEY[searchType] || 'certNestedTotal
 const hasCertNested = Array.isArray(nestedList);
 
 
+/**
+ * @param {number[]} nums
+ * @return {void} Do not return anything, modify nums in-place instead.
+ */
 const moveZeroes1 = nums => {
   let slow = 0
   for (let fast = 0; fast < nums.length; fast++) {
@@ -66,6 +74,10 @@ const moveZeroes1 = nums => {
 
 
 
+/**
+ * @param {number[]} nums
+ * @return {void} Do not return anything, modify nums in-place instead.
+ */
 const moveZeroes2 = nums => {
   let slow = 0
   for (let fast = 0; fast < nums.length; fast++) {

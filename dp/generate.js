@@ -25,6 +25,10 @@
  * 约束：
  * 1 <= numRows <= 30。
  */
+/**
+ * @param {number} numRows
+ * @return {number[][]}
+ */
 function generate(numRows) {
   let res = []
   for (let i = 0; i < numRows; i++) {

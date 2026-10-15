@@ -20,6 +20,10 @@
  * 约束：
  * 1 <= intervals.length <= 10^4，0 <= start <= end <= 10^4。
  */
+/**
+ * @param {number[][]} intervals
+ * @return {number[][]}
+ */
 function merge(intervals) {
   // 0. 边界情况：没有区间直接返回空数组
   if (intervals.length === 0) return []
@@ -89,6 +93,10 @@ console.log(merge(arr));
 
 
 
+/**
+ * @param {number[][]} intervals
+ * @return {number[][]}
+ */
 function merge1(intervals) {
   if (intervals.length === 0) reutrn[];
   intervals.sort(a, b => a[0] - b[0])

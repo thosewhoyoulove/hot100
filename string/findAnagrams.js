@@ -22,6 +22,11 @@
  * 1 <= s.length, p.length <= 3 * 10^4，只含小写字母。
  */
 
+/**
+ * @param {string} s
+ * @param {string} p
+ * @return {number[]}
+ */
 function findAnagrams(s, p) {
   // TODO: 固定长度滑动窗口
 }

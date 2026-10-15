@@ -30,6 +30,11 @@
  * 约束：
  * nums 长度 [2, 10^4]，保证恰好有一个答案。
  */
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
 const twoSum = (nums, target) => {
   const map = new Map()
   for (let i = 0; i < nums.length; i++) {
@@ -41,14 +46,4 @@ const twoSum = (nums, target) => {
     }
   }
   return []
-}
-
-
-function same(a, b) {
-  const keys = new Set([...Object.keys(a), ...Object.keys(b)])
-  for (let k of keys) {
-    if ((a[k] || 0) !== (b[k] || 0)) return false
-
-  }
-  return true
 }
